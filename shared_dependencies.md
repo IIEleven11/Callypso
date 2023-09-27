@@ -1,15 +1,15 @@
-1. "openai_api_key": This is the API key for OpenAI GPT-3.5 which will be used in "openai_api.py" and "chatbot.py" to authenticate and make requests to the OpenAI API.
+As the prompt suggests creating a "config.json" and "callypsotraining.pth", it seems like these files are related to a machine learning model configuration and its training. However, without more specific details about the content of these files, we can only make assumptions about the shared dependencies. Here are some potential shared dependencies:
 
-2. "CallypsoTraining.pth": This is the trained voice model file which will be used in "voice_model.py" and "chatbot.py" to generate voice responses.
+1. Model Parameters: These could include the architecture of the model, learning rate, batch size, number of epochs, etc. These parameters might be defined in the "config.json" and used in "callypsotraining.pth".
 
-3. "text_query": This is the user's input text which will be used in "main.py" and "chatbot.py" to generate a response from the chatbot.
+2. Dataset Information: This could include the path to the dataset, the size of the dataset, the split ratio for training and testing, etc. This information might be required in both files.
 
-4. "voice_response": This is the chatbot's response in voice format, generated in "chatbot.py" and used in "main.py" to output the response.
+3. Preprocessing Information: Details about how the data is preprocessed might be shared between the files. This could include information about normalization, augmentation, etc.
 
-5. "generate_text_response()": This function in "chatbot.py" uses the OpenAI API to generate a text response based on the user's query. It is called from "main.py".
+4. Output/Result Information: This could include the path where the trained model ("callypsotraining.pth") should be saved, the format of the saved model, etc. This information might be defined in the "config.json".
 
-6. "generate_voice_response()": This function in "voice_model.py" uses the trained voice model to convert the text response into voice. It is called from "chatbot.py".
+5. Function Names: Functions for training the model, loading the data, preprocessing the data, etc. might be shared between the files.
 
-7. "get_voice_model()": This function in "voice_model.py" loads the trained voice model from "CallypsoTraining.pth". It is called from "chatbot.py".
+6. Variable Names: Variables for storing the model, the data, the results, etc. might be shared between the files.
 
-8. "send_request()": This function in "openai_api.py" sends a request to the OpenAI API and returns the response. It is called from "chatbot.py".
+Please note that these are assumptions based on typical machine learning project structures. The actual shared dependencies could be different based on the specific requirements of your project.

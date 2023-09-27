@@ -1,0 +1,23 @@
+{
+    "model_parameters": {
+        "architecture": "ResNet50",
+        "learning_rate": 0.001,
+        "batch_size": 32,
+        "epochs": 100
+    },
+    "dataset_information": {
+        "path": "/path/to/dataset",
+        "size": 10000,
+        "split_ratio": {
+            "train": 0.8,
+            "test": 0.2
+        }
+    },
+    "preprocessing_information": {
+        "normalization": true,
+        "augmentation": true
+    },
+    "output_information": {
+        "model_path": "callypsotraining.pth"
+    }
+}
